@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
 const multer = require('multer')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const saltRounds = 10
 const storage = multer.diskStorage({
    destination: (req, file, callback) => {
